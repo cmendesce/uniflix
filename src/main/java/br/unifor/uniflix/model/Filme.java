@@ -2,16 +2,17 @@ package br.unifor.uniflix.model;
 
 public class Filme {
 
-    private String nome;
+    private String titulo;
     private String sinopse;
-    private String imagem;
+    private double nota;
+    private boolean adulto;
 
-    public String getNome() {
-        return nome;
+    public String getTitulo() {
+        return titulo;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
     public String getSinopse() {
@@ -22,11 +23,19 @@ public class Filme {
         this.sinopse = sinopse;
     }
 
-    public String getImagem() {
-        return imagem;
+    public double getNota() {
+        return nota;
     }
 
-    public void setImagem(String imagem) {
-        this.imagem = imagem;
+    public void setNota(double nota) {
+        this.nota = nota;
+    }
+
+    public boolean isAdulto() {
+        return adulto;
+    }
+
+    public void setAdulto(boolean adulto) {
+        this.adulto = adulto;
     }
 }
